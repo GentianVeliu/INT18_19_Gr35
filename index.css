@@ -45,3 +45,38 @@ footer{
     margin: -22px;
     padding: -11px;
 }
+.pjesa2 
+{
+    padding: 10px;
+    font-size: 12px;
+    text-align: left;
+    background: #33302e;
+    color: white;
+    font-family: Arial;
+    letter-spacing: 1px;
+    width: 100%;
+    height: auto;
+}
+:placeholder-shown {
+    background: #33302e;
+    
+}
+::placeholder { 
+    color : white;
+    opacity: 1;
+}
+
+.rrjetetSociale     
+{
+    margin : 30px 0 0 20px ;
+}
+#rrjetetSociale1
+{
+    margin-left:30px;
+}
+#rrjetetSociale2{
+    margin-left: 30px;
+}
+#rrjetetSociale3{
+     margin-left:35px;
+}
