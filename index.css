@@ -92,31 +92,25 @@ footer{
 
 .hnje{
     font-family: "Times New Roman";  
-    font-size: 24px;
-    font-size: 1.5rem;
+    font-size: 40px;
     font-weight: bold;
+    margin-left: 30px;
     margin: 20px;
     padding: 10px;
 }
 
 .gallery{
     margin: 50px;
-    border: 1px solid #ccc;
     float: left;
     width: 260px;
-    height: 360px;
+    height: 500px;
 }
 .gallery img{
     width: 100%;
     height: auto;
 }
 .desc{
-    padding: 15px;
-    text-align: center;
-}
-.tabela{
-    margin: -22px;
-    padding: -11px;
+    text-align: left;
 }
 .pjesa2 
 {
