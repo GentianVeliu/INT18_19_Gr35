@@ -1,6 +1,4 @@
-div{
-	margin: 0px;
-}
+
 body{
 	  font-family: 'Work Sans', sans-serif;
 
@@ -8,6 +6,7 @@ body{
 
 header{
   background-color:#ffffff;
+
 
 }
 
@@ -83,7 +82,7 @@ nav a:hover::before{
 body{
 	margin: 0;
 	padding: 0;
-	text-decoration: none;
+	
 }
 
 .thing1{
@@ -94,11 +93,11 @@ body{
 
 .thing1 img{
 	width: 100%;
+	
 
 }
 .thing2{
 	background: #e5192c;
-	color:#fff;
 	height: 500px;
 	padding-top: 100px;
 	position: relative;
@@ -111,6 +110,7 @@ body{
 	text-transform: uppercase;
 	padding-top: 0px;
 	margin-left: 0px;
+	color: #fff;
 
 }
 .thing2 p{

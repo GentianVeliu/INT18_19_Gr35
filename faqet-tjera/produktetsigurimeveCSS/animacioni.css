@@ -80,11 +80,11 @@
 	border-color: white;
 	height: 100%;
 	transform: translateX(0);
-	transition: .3s transform linear, .3s height linear .3s;
+	transition: .3s transform linear, .5s height linear .3s;
 }
 .team-member:hover:after{
 	border-color: white;
 	height: 100%;
 	transform: translateX(0);
-	transition: .3s transform linear, .3s height linear .5s;
+	transition: .3s transform linear, .5s height linear .5s;
 }
