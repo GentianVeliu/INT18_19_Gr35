@@ -6,6 +6,8 @@ body{
 
 header{
   background-color:#ffffff;
+  font-family: 'Work Sans', sans-serif;
+
 
 
 }
@@ -32,6 +34,7 @@ nav li{
 	display: inline-block;
 	margin-left: 50px;
 	padding-top:22px;
+	margin-top: 20px;
 	position: relative;
 	text-decoration-style: none;
 }
