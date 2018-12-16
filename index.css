@@ -127,6 +127,20 @@ footer{
     height: auto;
 }
 
-
+.fdiv
+            {
+                background-color: dimgrey;
+                width: 100%; height: 400px;
+            }
+           .fdiv1
+           {
+               float: left;
+               width: 25%; 
+               height: 400px;
+           }
+           .dh3
+           {
+               
+           }
 
 
