@@ -126,28 +126,7 @@ footer{
     width: 100%;
     height: auto;
 }
-:placeholder-shown {
-    background: #33302e;
-    
-}
-::placeholder { 
-    color : white;
-    opacity: 1;
-}
 
-.rrjetetSociale     
-{
-    margin : 30px 0 0 20px ;
-}
-#rrjetetSociale1
-{
-    margin-left:30px;
-}
-#rrjetetSociale2{
-    margin-left: 30px;
-}
-#rrjetetSociale3{
-     margin-left:35px;
-}
+
 
 
