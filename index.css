@@ -177,7 +177,7 @@ footer{
 }
 .fdiv
             {
-               
+                background-image: url("foto/earth.png");
                 background-attachment: fixed;
                 background-position: 45% 96%;
                 background-repeat: no-repeat;
