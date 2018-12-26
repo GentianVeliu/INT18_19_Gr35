@@ -196,11 +196,6 @@ nav a:hover::before{
 	padding: 15px 0;
 	color: #4e4e4e;
 }
-.single-works h6{
-	color: #a8a8a8;
-	font-size: 13px;
-	padding: 5px 0 3px;
-}
 
 .single-works p{
     color:#5c5c5c;
