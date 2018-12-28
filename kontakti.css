@@ -9,7 +9,6 @@ body{
 
 header{
   background-color:#fff;
-  position: fixed;
   width: 100%;
 
 }
@@ -87,7 +86,6 @@ nav a:hover::before{
 }
 #wrap1
 {
-    border: 1px red solid;
     width: 100%;
     height: 700px;
     background-color: #ffffff; 
@@ -95,20 +93,33 @@ nav a:hover::before{
 }
 .left1
 {
-    border: 1px blue solid;
+  
     width: 26%;
     height: 100%;
     float: left;
 }
 .right1
 {
-    border: 1px blue solid;
+  
     width: 70%;
     height: 100%;
     float: right;
 }
+.divaudio
+{
+     width: 35%;
+    height: 100%;
+    float: left;
+}
+.divrrjetet
+{
+   
+     width: 60%;
+    height: 100%;
+    float: right;
+}
  #footert{
-    padding-right: 50px;
+   padding-right: 205px;
 }
 #footert tr td{
     padding:5px;
@@ -118,7 +129,7 @@ nav a:hover::before{
 #wrap
 {
     width: 100%;
-    height: 250px;
+    height: 260px;
     background-color: #e4dfff; 
     letter-spacing: 1px;
 }
