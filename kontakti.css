@@ -125,7 +125,45 @@ nav a:hover::before{
     padding:5px;
   
 }
-
+/*Perdorimi i animacioneve ne css3*/
+.animacioni{
+                width: 100px;
+                height: 100px;
+                background: pink;
+                position: relative;
+                
+                animation-name: animacioniInterneti;
+                animation-duration: 3s;
+                animation-timing-function: linear;
+                animation-delay: 3s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate;
+                animation-play-state: running;
+                
+                   /*Safari hde Chrome*/
+                -webkit-animation-name: animacioniInterneti;
+                -webkit-animation-duration: 3s;
+                -webkit-animation-timing-function: linear;
+                -webkit-animation-delay: 3s;
+                -webkit-animation-iteration-count: infinite;
+                -webkit-animation-direction: alternate;
+                -webkit-animation-play-state: running;
+            }
+                
+                @keyframes animacioniInterneti{
+                    0% {background: red; left: 0px; top: 0px}
+                    25% {background: yellow; left: 200px; top: 0px}
+                    50%{background: green; left: 200px; top: 200px}
+                    70%{background: blue; left: 0px; top: 200px}
+                    100%{background: red; left: 0px; top: 0px}
+                }
+                @-webkit-keyframes animacioniInterneti{
+                    0% {background: red; left: 0px; top: 0px}
+                    25% {background: yellow; left: 200px; top: 0px}
+                    50%{background: green; left: 200px; top: 200px}
+                    70%{background: blue; left: 0px; top: 200px}
+                    100%{background: red; left: 0px; top: 0px}
+                }
 #wrap
 {
     width: 100%;
