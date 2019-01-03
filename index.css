@@ -176,15 +176,33 @@ footer{
     width: 100%;
     height: auto;
 }
+#wrap1
+{
+    width: 100%;
+    height: 260px;
+    background-color: #e4dfff; 
+    letter-spacing: 1px;
+}
+.left1
+{padding: 4px 0 0 4px;
+    width: 26%;
+    height: 100%;
+    float: left;
+}
+.right1
+{
+    width: 70%;
+    height: 100%;
+    float: right;
+}
+h5
+{
+    font-family: Trebuchet MS;
+}
+
 .fdiv
             {
-                background-image: url("foto/earth.png");
-                background-attachment: fixed;
-                background-position: 45% 96%;
-                background-repeat: no-repeat;
-                background-size: 1700px 440px;
-                background-color: dimgrey;
-                width: 100%; height: 400px;
+                width: auto; height: auto;
             }
            .fdiv1
            {
@@ -192,9 +210,9 @@ footer{
                width: 25%; 
                height: 400px;
            }
-           .dh3
+           #dh3
            {
-               
+               text-transform: uppercase;
+               font-family: Times;
            }
-
 
