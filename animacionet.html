@@ -2,6 +2,8 @@
 <html>
     <head>
         <title>Disa Animacione</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="jquery-3.3.1.min.js"></script>
         <style>
             .divcss3{
                 column-count: 4;
@@ -16,6 +18,17 @@
                 -webkit-column-gap: 3px;
                 -webkit-column-rule: 1px #001313 outset;
                 -webkit-column-fill: balance;
+                
+            }
+             #paraqit, #paneli{
+                padding: 5px;
+                text-align: center;
+                background-color: #33ffff;
+                border: dashed 1px #999999;
+            }
+            #paneli{
+                padding: 50px;
+                display: none;  //nuk e shfaq
                 
             }
         </style>
@@ -45,7 +58,8 @@
   Sorry, your browser does not support inline SVG.
 </svg>
          </div>
-            <p style="color:white;background-color: #001313;">Harta e lokacionit</p>
+            <button onclick="nderrimiTekstit()">Ndrysho tekstin</button>
+            <h4 id="ndrrimteksti" style="color:white;background-color: #001313;">Harta e lokacionit</h4>
         
             <p>Klikoni butonin p&euml;r t&euml; par&euml; koordinatat e lokacionit tuaj.</p>
 
@@ -101,6 +115,18 @@
             nj&euml; bashk&euml;punim tjet&euml;r me kompanin&euml; e sigurimit "MONDIAL Assistance Group", kompani
             kjo pjes&euml; e elit&euml;s nd&euml;rkomb&euml;tare e specializuar n&euml; sfer&euml;n e sigurimeve.
         </div>
+   <ul style="font-size: 20px;">
+      <li>Vendi</li>
+      <li>Harta
+          <ul>
+              <li>Vendi i ndodhjes tuaj</li>
+          </ul>
+      </li>
+   </ul>
+        <p style="width: 300px;"><img src="foto/facebook_32.png" alt="Kjo është logo e facebook-ut" style="float: right;">Këtu klikoni për të hyrë në facebbok</p>
+      <p style="width: 300px;"><img src="foto/twitter_32.png" alt="Kjo është logo e twitter-ut" style="float: left;">Këtu klikoni për të hyrë në twitter</p>
+     <div id="paraqit">Klikoni per te rreshqitur posht kete panel</div>
+     <div id="paneli">PROSIG</div>
     </body>
     <script>
 var x = document.getElementById("demo");
@@ -116,6 +142,15 @@ function getLocation() {
 function showPosition(position) {
     x.innerHTML = "Latitude: " + position.coords.latitude + 
     "<br>Longitude: " + position.coords.longitude;
-}
+};
+        function nderrimiTekstit(){
+    document.getElementById("ndrrimteksti").innerHTML = "Vendi i ndodhjes tuaj";
+};
+ $(document).ready(function(){
+              $("#paraqit").click(function(){
+                  $("#paneli").slideToggle("slow");
+                  $("#paraqit").text("Klikoni per ta mbyllur panelin!");
+              });
+            });
 </script>
 </html>

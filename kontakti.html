@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="kontakti.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="jquery-3.3.1.min.js"></script>
 </head>
 
 <body>
@@ -43,19 +45,22 @@
     http://www.prosig.com
             </pre>
             <h3 style="margin: 21px; font-family: Sans-serif; border-bottom:1px black solid;">Orët e punës në zyret e shitjes</h3>
-            <pre style="font-family: Garamond;">
+            <pre id="hideshow" style="font-family: Garamond;">
     E Hënë - E Premte: 08 - 16
 
     E Shtunë: 08 - 12
 
-    E Diel: Mbyllur
+    <mark>E Diel: Mbyllur</mark>
             </pre>
             <h3 style="margin: 21px; font-family: Sans-serif; border-bottom:1px black solid;">Orët e punës në administratë</h3>
-            <pre style="font-family: Garamond;">
+            <address style="font-family: Garamond; padding-left: 20px;">
     E Hënë - E Premte: 08 - 16
-
-    E Shtunë - E Diel: Mbyllur
-            </pre>
+    <br>
+   <mark> E Shtunë - E Diel: Mbyllur</mark>
+            </address>
+            <button id="hide">Hide</button>
+            <button id="show">Show</button>
+            <br>
             <table align="right" id="footert">
                        <tr>
                            <td><a href="https://www.facebook.com/"><img src="foto/facebook_32.png" title="Facebook"></a></td>
@@ -149,4 +154,14 @@
         Copyright &COPY; 2018 PROSIG - All Rights Reserved
     </footer>   
 </body>
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("#hideshow").hide();
+  });
+  $("#show").click(function(){
+    $("pre").show();
+  });
+});
+</script>
 </html>
