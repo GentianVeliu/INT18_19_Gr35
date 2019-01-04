@@ -5,6 +5,21 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="lexo1.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+    <script>
+function clickCounter() {
+  if (typeof(Storage) !== "undefined") {
+    if (localStorage.clickcount) {
+      localStorage.clickcount = Number(localStorage.clickcount)+1;
+    } else {
+      localStorage.clickcount = 1;
+    }
+    document.getElementById("result").innerHTML = "" + localStorage.clickcount + "";
+  } else {
+    document.getElementById("result").innerHTML = "";
+  }
+}
+</script>
   
 </head>         
 
@@ -60,6 +75,8 @@ Kjo kontratë e garancionit lidhet me qëllim të forcimit të besimit mbi shlye
 <strong>Garancioni i Avansit</strong>
 
 Siç përcaktohet me Certifikatën e Garancisë së Paradhënies dhe me kushtet e kontratës mbi bazën e së cilës lëshohet kjo Garanci, garantuesi Kompania e Sigurimeve Illyria, merr përsipër që në rast se kontraktuesi nuk u përgjigjet detyrimeve të tij, përfituesit të shumës së garantuar duhet plotësuar detyrimet deri në shumën e garantuar.<br><br>
+<p><button onclick="clickCounter()" type="button">Click me</button><div id="result"></div></p>
+
 </p>
                 </div></div>
         </div>
