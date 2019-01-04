@@ -81,7 +81,29 @@
 				<h4>Udhëtimi im</h4>
 				<p style="font-size: 16px;">Sigurimi i shendetit ne udhetim<br> <a href="../lexo2.html" style="color: #d2514b;text-decoration: none;font-size: 16px;"> <strong>lexo më shumë >></strong></a></p>
 			</div>
-			
+			<div class="single-works">
+				<script type="text/javascript">
+					var now = new Date();
+					var today = now.getDay();
+					var startTime = new Date();
+					startTime.setHours(20);
+					startTime.setMinutes(0);
+					startTime.setSeconds(0);
+					var endTime = new Date();
+					endTime.setHours(20);
+					endTime.setMinutes(41);
+					endTime.setSeconds(0);
+
+					if (today > 0 && today < 6)
+						{
+						if (startTime < now && endTime > now)
+							{document.write('<img src="foto_3.jpg" style="height: 230px;">');}
+						else
+							{document.write('<img src="foto_6.jpeg" style="height: 230px;">');}
+						}
+					else
+						{document.write('<img src="foto_6.jpg" style="height: 230px;">');}
+				</script>
 				<h4>Shëndeti im</h4>
 				<p style="font-size: 16px;">Siguro shëndetin për çdo rast<br> <a href="../lexo3.html" style="color: #d2514b;text-decoration: none;font-size: 16px;"> <strong> lexo më shumë >></strong></a></p>
 				
