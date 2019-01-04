@@ -45,7 +45,8 @@
   Sorry, your browser does not support inline SVG.
 </svg>
          </div>
-            <p style="color:white;background-color: #001313;">Harta e lokacionit</p>
+            <button onclick="nderrimiTekstit()">Ndrysho tekstin</button>
+            <h4 id="ndrrimteksti" style="color:white;background-color: #001313;">Harta e lokacionit</h4>
         
             <p>Klikoni butonin p&euml;r t&euml; par&euml; koordinatat e lokacionit tuaj.</p>
 
@@ -127,6 +128,9 @@ function getLocation() {
 function showPosition(position) {
     x.innerHTML = "Latitude: " + position.coords.latitude + 
     "<br>Longitude: " + position.coords.longitude;
-}
+};
+        function nderrimiTekstit(){
+    document.getElementById("ndrrimteksti").innerHTML = "Vendi i ndodhjes tuaj";
+};
 </script>
 </html>
