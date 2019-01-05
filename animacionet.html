@@ -177,7 +177,7 @@ $(document).ready(function(){
 });
 
 function regExp() {
-  var str = "Këtu ekziston shkronja &euml;";
+  var str = "KÃ«tu ekziston shkronja &euml;";
   var patt = new RegExp("&euml;");
   var res = patt.test(str);
   document.getElementById("testmetod").innerHTML = res;
@@ -225,6 +225,72 @@ function Ora() {
                    }); 
                 });
             </script>
+        <div class="translate"><br><br><div class="translate1"></div></div>
+    <style>
+                .translate {
+                width: 180px;
+                height: 180px;
+                background-color: yellow;
+                border: 1px solid black;
+                transform: translate(100px,200px); 
+                
+            }.translate1
+            {
+                margin-left: 40px;
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                border: 1px solid black;
+                transform: rotate(40deg);
+            }
+    </style>
+    <div class="scale"><div class="skew"></div></div>
+            <style>
+                .scale
+                {
+                    margin-left:100px;
+                    margin-top: 20px;
+                    width: 180px;
+                    height: 180px;
+                    background-color: yellow;
+                    border: 2px black double;
+                    transform: scale(0.3,0.3);
+                      
+                }
+                .skew{
+                     margin-left:60px;
+                    margin-top: 60px;
+                    width: 50px;
+                    height: 50px;
+                    background-color: red;
+                    border: 2px black double;
+                    transform: skewX(30deg);
+                   }
+            </style> 
+            <div class="rotateX">Divi i rrotulluar 50 shkalle sipas X</div>
+            <style>
+                .rotateX{
+                    width: 100px;
+                    height: 100px;
+                    background-color: red;
+                    border: 2px black double;
+                    -webkit-transform: rotateX(150deg); 
+                    transform: rotateX(150deg);
+                    resize: both;
+                    overflow: auto;
+                }
+            </style>
+            <div class="translate3D">Divi i rrotulluar ne 3D</div>
+              <style>
+                .translate3D{
+                    width: 100px;
+                    height: 100px;
+                    border: 2px black double;
+                    transform: rotate3d(1, 2, -1, 192deg);
+                    background-color:pink;
+                }
+            </style>
+            
     </body>
     <script>
 var x = document.getElementById("demo");
