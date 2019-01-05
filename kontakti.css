@@ -111,7 +111,13 @@ nav a:hover::before{
     height: 100%;
     float: left;
 }
-
+.rright1
+{
+   
+     width: 60%;
+    height: 100%;
+    float: right;
+}
  #footert{
    padding-right: 205px;
 }
