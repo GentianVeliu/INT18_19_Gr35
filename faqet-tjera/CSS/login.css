@@ -18,7 +18,7 @@ h1:after {
 }
 	
 body {
-	background-image: url(foto/login.jpg);
+	background-image: url(../foto/login.jpg);
 	height: 100%;
     background-position: center;
     background-repeat: repeat;
