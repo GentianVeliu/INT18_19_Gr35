@@ -64,14 +64,28 @@
             <p>Klikoni butonin p&euml;r t&euml; par&euml; koordinatat e lokacionit tuaj.</p>
 
 <button onclick="getLocation()">Butoni</button>
-
 <p id="demo"></p>
 
-<div id="div1" style="width:500px;height:300px;border:2px solid #001313;" ondrop="drop(event)" ondragover="allowDrop(event)">
-  <img src="foto/mapg.png" width="500" height="300" draggable="true" ondragstart="drag(event)" id="drag1"></div><br />
-  <br>
-  
-  <h3 style="text-align:center">Fakte t&euml; rend&euml;sishme rreth nesh!</h3>
+<div id="div1" style=" width:500px;height:300px;border:3px solid #003457;" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="foto/mapg.png" width="500" height="300" draggable="true" ondragstart="drag(event)" id="drag1"></div><br /><br />
+  <div id="div2" style=" width:500px;height:300px;border:3px solid #003457; resize:both;overflow:auto;" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+</script>
+
+  <h3 style="text-align:center; padding-top: 30px;">Fakte t&euml; rend&euml;sishme rreth nesh!</h3>
   <div class="divcss3">
             Kompania e Sigurimeve "PROSIG" &euml;sht&euml; themeluar n&euml; mars t&euml; vitit 2010.
             Periudha e dyt&euml; tremujore e vitit 2010 ka qen&euml; periudha fillestare 
