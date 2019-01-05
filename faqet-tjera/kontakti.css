@@ -81,7 +81,7 @@ nav a:hover::before{
 
 .banner
 {
-    background: url("foto/contact.png") no-repeat center center;
+    background: url("../foto/contact.png") no-repeat center center;
         
 }
 #wrap1
